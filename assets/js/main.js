@@ -65,9 +65,12 @@ generatePrice.addEventListener('click', function () {
             ticketPrice = ticketPrice - ((ticketPrice * 40) / 100);
             console.log(ticketPrice.toFixed(2));
         }
+
+        const divTicketPrice = document.getElementById('ticket');
+    
+        divTicketPrice.innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + ticketPrice.toFixed(2) + ' €';
     }
 
-    document.getElementById('ticket').innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + ticketPrice + ' €';
 
    /* const ticket = document.getElementById('ticket');
     console.log(ticket);
