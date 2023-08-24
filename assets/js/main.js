@@ -42,6 +42,9 @@ const generatePrice = document.getElementById('generate_price');
 
 generatePrice.addEventListener('click', function () {
 
+    const name = document.getElementById('name').value;
+    console.log(name);
+
     const distance = document.getElementById('distance').value;
     console.log(distance);
 
@@ -81,6 +84,8 @@ generatePrice.addEventListener('click', function () {
         prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto * 40) / 100);
         console.log(prezzoBiglietto.toFixed(2));
     }
+
+    //////////////END FIRST MILESTONE//////////////
 
     //stampo il prezzo finale con un massimo di due cifre decimali (centesimi)
 
