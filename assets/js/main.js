@@ -47,31 +47,53 @@ generatePrice.addEventListener('click', function () {
     if (distance > 0 && age > 0) {
         let ticketPrice = (distance * 0.21);
         console.log(ticketPrice.toFixed(2));
-        /* let fullTicket */
 
         //i minorenni pagano il 20% in meno
         if (age < 18) {
             ticketPrice = ticketPrice - ((ticketPrice * 20) / 100);
             console.log(ticketPrice.toFixed(2));
-            
 
             //gli over 65 pagano il 40% in meno
         } else if (age >= 65) {
             ticketPrice = ticketPrice - ((ticketPrice * 40) / 100);
             console.log(ticketPrice.toFixed(2));
+
         }
 
-        ////////////////////END FIRST MILESTONE////////////////////
 
-        const divTicketPrice = document.getElementById('ticket_price'); //<--modifica id
+        //END FIRST MILESTONE
+
+        //divTicketPrice
+        const divTicketPrice = document.getElementById('ticket_price');
 
         divTicketPrice.innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + ticketPrice.toFixed(2) + ' €';
 
+        //divName
         const divName = document.getElementById('name_passenger');
 
         divName.innerHTML = 'Questo è il nome del passeggero ' + name;
 
-         
+        //divFullTicket
+        if (age >= 18 && age < 65) {
+            let fullTicket = 'Biglietto Standard';
+            console.log(fullTicket);
+
+            const divFullTicket = document.getElementById('offer');
+
+            divFullTicket.innerHTML = 'Biglietto Standard'
+
+            //divReducedTicket
+        } else if (age < 18 || age >= 65) {
+            let reducedTicket = 'Biglietto Ridotto';
+            console.log(reducedTicket);
+
+            const divReducedTicket = document.getElementById('offer');
+
+            divReducedTicket.innerHTML = 'Biglietto Ridotto'
+        }
+
+
+
 
     }
 
