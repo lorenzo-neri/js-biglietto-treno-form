@@ -38,10 +38,16 @@ console.log(kmPercorsi); */
 /* const etaPasseggero = Number(prompt('Quanti anni hai?'));
 console.log(etaPasseggero); */
 
-const generatePrice = document.getElementById('generate_price')
+const generatePrice = document.getElementById('generate_price');
+
+generatePrice.addEventListener('click', function () {
+
+    const distance = document.getElementById("distance").value;
+    console.log(distance);
+})
 
 //calcolo il prezzo del biglietto sulla base di 0.21 € al km
-if (kmPercorsi > 0 && etaPasseggero > 0) {
+/* if (kmPercorsi > 0 && etaPasseggero > 0) {
     let prezzoBiglietto = (kmPercorsi * 0.21);
     console.log(prezzoBiglietto.toFixed(2));
 
@@ -63,8 +69,9 @@ if (kmPercorsi > 0 && etaPasseggero > 0) {
 
     divPrezzoBiglietto.innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + prezzoBiglietto.toFixed(2) + ' €';
 
-    /* prezzoBiglietto.innerHTML = `Questo è l'importo da pagare per il biglietto: ${prezzoBiglietto.toFixed(2) + '€'} `; */
+    //prezzoBiglietto.innerHTML = `Questo è l'importo da pagare per il biglietto: ${prezzoBiglietto.toFixed(2) + '€'} `;
 } else {
     alert('Dati errati o mancanti');
     location.reload();
 }
+ */
