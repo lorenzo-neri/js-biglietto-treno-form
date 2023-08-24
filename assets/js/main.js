@@ -28,26 +28,19 @@ tools
 - console.log
 */
 
-//chiedo il numero di km da percorrere
-
-/* const kmPercorsi = Number(prompt('Ciao, quanti chilometri devi percorrere?'));
-console.log(kmPercorsi); */
-
-//chiedo quanti anni ha il passeggero
-
-/* const etaPasseggero = Number(prompt('Quanti anni hai?'));
-console.log(etaPasseggero); */
-
 const generatePrice = document.getElementById('generate_price');
 
 generatePrice.addEventListener('click', function () {
 
+    //chiedo nome
     const name = document.getElementById('name').value;
     console.log(name);
 
+    //chiedo km da percorrere
     const distance = document.getElementById('distance').value;
     console.log(distance);
 
+    //chiedo età
     const age = document.getElementById('age').value;
     console.log(age);
 
@@ -66,49 +59,14 @@ generatePrice.addEventListener('click', function () {
             console.log(ticketPrice.toFixed(2));
         }
 
-        const divTicketPrice = document.getElementById('ticket');
-    
+        ////////////////////END FIRST MILESTONE////////////////////
+
+        const divTicketPrice = document.getElementById('ticket'); //<--modifica id
+
         divTicketPrice.innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + ticketPrice.toFixed(2) + ' €';
+
     }
 
 
-   /* const ticket = document.getElementById('ticket');
-    console.log(ticket);
-
-    function generatePrice() {
-        document.getElementById('ticket').innerHTML = generatePrice
-    } */
 })
 
-
-//calcolo il prezzo del biglietto sulla base di 0.21 € al km
-/* if (kmPercorsi > 0 && etaPasseggero > 0) {
-    let prezzoBiglietto = (kmPercorsi * 0.21);
-    console.log(prezzoBiglietto.toFixed(2));
-
-    //i minorenni pagano il 20% in meno
-    if (etaPasseggero < 18) {
-        prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto * 20) / 100);
-        console.log(prezzoBiglietto.toFixed(2));
-
-        //gli over 65 pagano il 40% in meno
-    } else if (etaPasseggero >= 65) {
-        prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto * 40) / 100);
-        console.log(prezzoBiglietto.toFixed(2));
-    }
-
-    //////////////END FIRST MILESTONE//////////////
-
-    //stampo il prezzo finale con un massimo di due cifre decimali (centesimi)
-
-    const divPrezzoBiglietto = document.getElementById('prezzo_biglietto');
-    console.info(divPrezzoBiglietto);
-
-    divPrezzoBiglietto.innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + prezzoBiglietto.toFixed(2) + ' €';
-
-    //prezzoBiglietto.innerHTML = `Questo è l'importo da pagare per il biglietto: ${prezzoBiglietto.toFixed(2) + '€'} `;
-} else {
-    alert('Dati errati o mancanti');
-    location.reload();
-}
- */
