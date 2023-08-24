@@ -47,7 +47,24 @@ generatePrice.addEventListener('click', function () {
 
     const age = document.getElementById('age').value;
     console.log(age);
+
+    if (distance > 0 && age > 0) {
+        let ticketPrice = (distance * 0.21);
+        console.log(ticketPrice.toFixed(2));
+
+        //i minorenni pagano il 20% in meno
+        if (age < 18) {
+            ticketPrice = ticketPrice - ((ticketPrice * 20) / 100);
+            console.log(ticketPrice.toFixed(2));
+
+            //gli over 65 pagano il 40% in meno
+        } else if (age >= 65) {
+            ticketPrice = ticketPrice - ((ticketPrice * 40) / 100);
+            console.log(ticketPrice.toFixed(2));
+        }
+    }
 })
+
 
 //calcolo il prezzo del biglietto sulla base di 0.21 € al km
 /* if (kmPercorsi > 0 && etaPasseggero > 0) {
