@@ -15,9 +15,21 @@
     <body>
         <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-        <input type="text" id="distance">
-
         <div id="prezzo_biglietto"></div>
+
+        <!-- form -->
+        <div>
+            <label for="distance">Km da percorrere</label>
+            <input type="number" id="distance" name="distance"><br><br>
+            <!-- /#distance -->
+
+            <label for="age">Fascia d'età</label>
+            <input type="text" id="age" name="age"><br><br>
+            <!-- /#age -->
+
+            <button id="generate_price">Genera</button>
+        </div>
+        <!-- /form -->
 
     </body>
 </html>

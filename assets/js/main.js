@@ -29,12 +29,16 @@ tools
 */
 
 //chiedo il numero di km da percorrere
-const kmPercorsi = Number(prompt('Ciao, quanti chilometri devi percorrere?'));
-console.log(kmPercorsi);
+
+/* const kmPercorsi = Number(prompt('Ciao, quanti chilometri devi percorrere?'));
+console.log(kmPercorsi); */
 
 //chiedo quanti anni ha il passeggero
-const etaPasseggero = Number(prompt('Quanti anni hai?'));
-console.log(etaPasseggero);
+
+/* const etaPasseggero = Number(prompt('Quanti anni hai?'));
+console.log(etaPasseggero); */
+
+const generatePrice = document.getElementById('generate_price')
 
 //calcolo il prezzo del biglietto sulla base di 0.21 € al km
 if (kmPercorsi > 0 && etaPasseggero > 0) {
