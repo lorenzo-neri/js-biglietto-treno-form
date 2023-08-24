@@ -45,3 +45,20 @@ h2{
 label{
     color: rgb(197, 7, 93);
 }
+
+/* TICKET */
+
+#ticket{
+    background-color: white;
+    padding: 2rem;
+    text-align: start;
+    display: flex;
+}
+
+#details_passenger{
+    width: 25%;
+}
+
+#info_ticket{
+
+}

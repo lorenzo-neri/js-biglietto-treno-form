@@ -47,11 +47,13 @@ generatePrice.addEventListener('click', function () {
     if (distance > 0 && age > 0) {
         let ticketPrice = (distance * 0.21);
         console.log(ticketPrice.toFixed(2));
+        /* let fullTicket */
 
         //i minorenni pagano il 20% in meno
         if (age < 18) {
             ticketPrice = ticketPrice - ((ticketPrice * 20) / 100);
             console.log(ticketPrice.toFixed(2));
+            
 
             //gli over 65 pagano il 40% in meno
         } else if (age >= 65) {
@@ -61,9 +63,15 @@ generatePrice.addEventListener('click', function () {
 
         ////////////////////END FIRST MILESTONE////////////////////
 
-        const divTicketPrice = document.getElementById('ticket'); //<--modifica id
+        const divTicketPrice = document.getElementById('ticket_price'); //<--modifica id
 
         divTicketPrice.innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + ticketPrice.toFixed(2) + ' €';
+
+        const divName = document.getElementById('name_passenger');
+
+        divName.innerHTML = 'Questo è il nome del passeggero ' + name;
+
+         
 
     }
 
