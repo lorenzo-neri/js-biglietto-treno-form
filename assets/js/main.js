@@ -42,8 +42,11 @@ const generatePrice = document.getElementById('generate_price');
 
 generatePrice.addEventListener('click', function () {
 
-    const distance = document.getElementById("distance").value;
+    const distance = document.getElementById('distance').value;
     console.log(distance);
+
+    const age = document.getElementById('age').value;
+    console.log(age);
 })
 
 //calcolo il prezzo del biglietto sulla base di 0.21 € al km
