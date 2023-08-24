@@ -98,11 +98,11 @@ generatePrice.addEventListener('click', function () {
         console.log(carriage);
 
         document.getElementById('carriage').innerHTML = 'La tua carrozza è la numero: ' + carriage;
-        
+
         //cpCode
         const cpCode = (Math.random() * 99999).toFixed();
         console.log(cpCode);
-        
+
         document.getElementById('cp_code').innerHTML = 'Codice CP: ' + cpCode;
     }
 
