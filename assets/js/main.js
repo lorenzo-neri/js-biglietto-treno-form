@@ -71,8 +71,9 @@ generatePrice.addEventListener('click', function () {
         //divName
         const divName = document.getElementById('name_passenger');
 
-        divName.innerHTML = 'Questo è il nome del passeggero ' + name;
+        divName.innerHTML = 'Questo è il nome del passeggero: ' + name;
 
+        //offer
         //divFullTicket
         if (age >= 18 && age < 65) {
             let fullTicket = 'Biglietto Standard';
@@ -92,9 +93,17 @@ generatePrice.addEventListener('click', function () {
             divReducedTicket.innerHTML = 'Biglietto Ridotto'
         }
 
+        //carriage
+        const carriage = (Math.random() * 15).toFixed();
+        console.log(carriage);
 
-
-
+        document.getElementById('carriage').innerHTML = 'La tua carrozza è la numero: ' + carriage;
+        
+        //cpCode
+        const cpCode = (Math.random() * 99999).toFixed();
+        console.log(cpCode);
+        
+        document.getElementById('cp_code').innerHTML = 'Codice CP: ' + cpCode;
     }
 
 

@@ -52,7 +52,7 @@ label {
     background-color: white;
     padding: 2rem;
     text-align: start;
-    display: flex;
+    /* display: flex; */
 }
 
 #details_passenger {
