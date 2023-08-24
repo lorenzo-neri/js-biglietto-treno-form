@@ -12,8 +12,13 @@ h2{
     color: white;
 }
 
-#main_part_form{
+#form{
     background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.663) 0 1px 10px;
+}
+
+#main_part_form{
     display: flex;
     padding: 2rem 5rem; 
     gap: 1rem;
@@ -21,7 +26,6 @@ h2{
 }
 
 #btn_part{
-    background-color: white;
     padding-bottom: 1.5rem;
     display: flex;
     gap: 1rem;
@@ -38,6 +42,5 @@ h2{
 }
 
 label{
-        color: rgb(197, 7, 93);
-    
+    color: rgb(197, 7, 93);
 }

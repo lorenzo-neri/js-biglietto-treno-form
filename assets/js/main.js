@@ -66,6 +66,15 @@ generatePrice.addEventListener('click', function () {
             console.log(ticketPrice.toFixed(2));
         }
     }
+
+    document.getElementById('ticket').innerHTML = 'Questo è l\'importo da pagare per il biglietto: ' + ticketPrice + ' €';
+
+   /* const ticket = document.getElementById('ticket');
+    console.log(ticket);
+
+    function generatePrice() {
+        document.getElementById('ticket').innerHTML = generatePrice
+    } */
 })
 
 

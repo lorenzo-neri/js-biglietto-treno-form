@@ -18,32 +18,42 @@
 
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-            <!-- form -->
-            <div id="main_part_form">
-                <div>
-                    <label for="name">Nome e Cognome</label>
-                    <input type="text" id="name" name="name">
+            <!-- #form -->
+            <div id="form">
+                <div id="main_part_form">
+                    <div>
+                        <label for="name">Nome e Cognome</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <!-- /#name -->
+                    <div>
+                        <label for="distance">Km da percorrere</label>
+                        <input type="number" id="distance" name="distance">
+                    </div>
+                    <!-- /#distance -->
+                    <div>
+                        <label for="age">Fascia d'età</label>
+                        <input type="number" id="age" name="age">
+                    </div>
+                    <!-- /#age -->
                 </div>
-                <!-- /#name -->
-                <div>
-                    <label for="distance">Km da percorrere</label>
-                    <input type="number" id="distance" name="distance">
+                <!-- /#main_part_form -->
+                
+                <div id="btn_part">
+                    <button id="generate_price">Genera</button>
+                    <button id="cancel">Annulla</button>
                 </div>
-                <!-- /#distance -->
-                <div>
-                    <label for="age">Fascia d'età</label>
-                    <input type="number" id="age" name="age">
-                </div>
-                <!-- /#age -->
+                <!-- /#btn_part -->
             </div>
-            <!-- /#main_part_form -->
+            <!-- /#form -->
 
-            <div id="btn_part">
-                <button id="generate_price">Genera</button>
-                <button id="cancel">Annulla</button>
+            
+            <!-- #ticket -->
+            <div id="ticket">
+                
             </div>
-            <!-- /#btn_part -->
-
+            <!-- /#ticket -->
+            
         </div>
         <!-- /.container -->
 
