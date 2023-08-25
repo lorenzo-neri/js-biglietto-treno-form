@@ -19,72 +19,82 @@
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
             <!-- #form -->
-            <div id="form">
+            <form id="form">
                 <div id="main_part_form">
                     <div>
                         <label for="name">Nome e Cognome</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <!-- /#name -->
                     <div>
                         <label for="distance">Km da percorrere</label>
-                        <input type="number" id="distance" name="distance">
+                        <input type="number" id="distance" name="distance"
+                            required>
                     </div>
                     <!-- /#distance -->
                     <div>
                         <label for="age">Fascia d'età</label>
-                        <input type="number" id="age" name="age">
+                        <input type="number" id="age" name="age" required>
                     </div>
                     <!-- /#age -->
                 </div>
                 <!-- /#main_part_form -->
 
                 <div id="btn_part">
-                    <button id="generate_price">Genera</button>
-                    <button id="cancel">Annulla</button>
+                    <button type="submit" id="generate_price">Genera</button>
+                    <button type="reset" id="cancel">Annulla</button>
                 </div>
                 <!-- /#btn_part -->
-            </div>
+            </form>
             <!-- /#form -->
 
             <!-- #ticket -->
             <h2>IL TUO BIGLIETTO</h2>
 
             <div id="ticket">
-                <!-- <div id="details_passengers">
-                    DETTAGLIO PASSEGGERI
-                    <div>
-                        NOME PASSEGGERO
-                    </div> -->
 
-                    <!-- #name_passenger -->
-                    <div id="name_passenger">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+
+                <div class="d-flex space-btw">
+                    <!-- #details_passengers -->
+                    <div id="details_passengers">
+
+                        <h4>
+                            NOME PASSEGGERO
+                        </h4>
+
+                        <!-- #name_passenger -->
+                        <div id="name_passenger">
+
+                        </div>
 
                     </div>
 
-                    <!-- #offer -->
-                    <div id="offer">
+                    <!-- #info_ticket -->
+                    <div id="info_ticket">
 
-                    </div>
+                        <!-- #offer -->
+                        <div id="offer">
 
-                    <!-- #carriage -->
-                    <div id="carriage">
-                        
-                    </div>
+                        </div>
 
-                    <!-- #cp_code -->
-                    <div id="cp_code">
-                        
-                    </div>
+                        <!-- #carriage -->
+                        <div id="carriage">
 
-                    <!-- #ticket_price -->
-                    <div id="ticket_price">
+                        </div>
+
+                        <!-- #cp_code -->
+                        <div id="cp_code">
+
+                        </div>
+
+                        <!-- #ticket_price -->
+                        <div id="ticket_price">
+
+                        </div>
 
                     </div>
                 </div>
-                <!-- <div id="info_ticket">
-
-                </div> -->
             </div>
             <!-- /#ticket -->
 

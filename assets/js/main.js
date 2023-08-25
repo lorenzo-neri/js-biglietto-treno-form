@@ -28,9 +28,15 @@ tools
 - console.log
 */
 
-const generatePrice = document.getElementById('generate_price');
+const formEl = document.querySelector('form');
 
-generatePrice.addEventListener('click', function () {
+formEl.addEventListener('submit', function (e) {
+    console.log('form submitted');
+    e.preventDefault();
+
+    const generatePrice = document.getElementById('generate_price');
+
+    // generatePrice.addEventListener('click', function () {
 
     //chiedo nome
     const name = document.getElementById('name').value;
@@ -71,7 +77,7 @@ generatePrice.addEventListener('click', function () {
         //divName
         const divName = document.getElementById('name_passenger');
 
-        divName.innerHTML = 'Questo è il nome del passeggero: ' + name;
+        divName.innerHTML = `Questo è il nome del passeggero: <strong>${name}</strong>`;
 
         //offer
         //divFullTicket
@@ -107,5 +113,7 @@ generatePrice.addEventListener('click', function () {
     }
 
 
+    //})
 })
+
 
